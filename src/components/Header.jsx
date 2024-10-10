@@ -25,6 +25,16 @@ const Header = () => {
             Books Page
           </a>
         </li>
+        <li className="nav-item">
+          <a className={`nav-link ${location.pathname.includes('register') && 'active'}`} href="/register">
+            Register Page
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className={`nav-link ${location.pathname.includes('login') && 'active'}`} href="/login">
+            Login Page
+          </a>
+        </li>
       </ul>
     </>
   );

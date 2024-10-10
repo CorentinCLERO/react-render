@@ -11,16 +11,6 @@ function VitePage() {
   const [changeRotation, setChangeRotation] = useState(true);
 
   useEffect(() => {
-    fetch('https://book-node-mongoose-render.onrender.com/api/books')
-      .then(() => {
-        // console.log(res)
-      })
-      .catch((error) => {
-        console.log('error', error);
-      });
-  }, []);
-
-  useEffect(() => {
     setChangeRotation((prev) => !prev);
   }, [isSpinningLogoReact, isSpinningLogoVite]);
 

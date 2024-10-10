@@ -7,7 +7,7 @@ Welcome.propTypes = {
 
 function Welcome({ name }) {
   return (
-    <div>
+    <div className='d-flex justify-content-center'>
       <Hello name={name} />
     </div>
   );
